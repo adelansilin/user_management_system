@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "user management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open",
+    "build": "vite build",
+    "prod": "vite preview"
+  },
+  "author": "adel",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
