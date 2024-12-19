@@ -32,7 +32,7 @@ class Login {
   
           // Redirect to dashboard or next page
           setTimeout(() => {
-            window.location.href = "src/pages/dashboard.html"; // Example redirection
+            window.location.href = "/src/pages/dashboard.html"; // Example redirection
           }, 2000);
         } else {
             console.log("Login failed:", data);
