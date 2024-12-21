@@ -1,9 +1,52 @@
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Employee Search</title>
+        <link rel="stylesheet" href="/src/css/dashboard.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
 
     </head>
     <body>
-        <p>welcomr to dashboard</p>
+        <header>
+            <h3 class="wbName">ProfileEdge</h3>
+            <h2 class="head">Posts Feed</h2>
+            <div class="icon">
+            <button class="login-button" onclick="toggleMenu()">
+                <img class="profile-img" alt="Profile Image">
+            </button>
+            <h3 class="name"></h3>
+        </div>
+          </header>
+          <p id="loginError" class="error"></p>
+      
+          <div class="sliding-menu" id="sliding-menu">
+            <button class="close-button">&#10005;</button>
+            <div class="sliding-content">
+              <a>Profile</a>
+              <a>Users</a>
+              <a>Carts</a>
+              <a>My posts</a>
+              <a>Todo</a>
+              <button class="sliding-btn" onclick="logout()">
+                <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+              </button>
+            </div>
+          </div>
 
+          <div id="posts-container">
+           
+          </div>
+
+          <script src="/src/js/dashboard.js"></script>
     </body>
 </html>

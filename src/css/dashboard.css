@@ -1,0 +1,235 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #F1F0E8;
+  font-family: "Roboto", serif;
+  overflow: hidden;
+}
+
+header {
+    background-color: #B3C8CF;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 0;
+    height: 25px;
+    position: sticky;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.wbName{
+    font-family: "Archivo", serif;
+    font-style: italic;
+    font-size:larger;
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    font-family: "Archivo", serif;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+  
+.name{
+    font-family: "Archivo", serif;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+}
+/* login icon */
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-button .profile-img{
+    padding: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    width: 50px;
+    background-color:#B3C8CF ;
+    margin: 0;
+    padding: 0;
+    color: #B3C8CF;
+    outline: none;
+  }
+  
+  .login-button:hover .profile-img{
+    transform: scale(1.1);
+  }
+   header button{
+    border: none;
+    background-color: #B3C8CF;
+   }
+
+  
+  /* login slider */
+
+  .sliding-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100%;
+    background-color: #B3C8CF;
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sliding-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sliding-menu ul li {
+    margin: 15px 0;
+  }
+  
+  .sliding-menu ul li a,
+  .sliding-menu ul li button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    background-color: #c6ad8f;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .sliding-menu ul li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10%;
+    background-color: #E5E1DA;
+  }
+  
+  .close-button:hover {
+    background-color: #F1F0E8;
+    transform: scale(1.1);
+  }
+  
+  .sliding-content {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    padding-top: 50px;
+  }
+  
+  .sliding-btn {
+    margin-top: auto; 
+  }
+  
+  .sliding-content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 3;
+    font-size: 1em;
+  }
+  
+  a:hover {
+    transform: scale(0.95);
+  }
+
+  /* post container */
+  #posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-height: 80vh; 
+  overflow-y: auto; 
+  }
+
+  .post {
+    background-color: #B3C8CF; /* Post card background */
+    color: #333; /* Text color */
+    width: 300px;
+    height: 400px; /* Fixed height for equal-sized posts */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure elements inside are spaced evenly */
+  }
+
+  .post h3 {
+    background-color: #89A8B2; /* Accent for the user's name */
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Archivo", serif;
+  }
+
+  .post h4 {
+    margin: 10px;
+    color: #333;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: bold;
+  }
+
+  .post p {
+    margin: 10px;
+    font-size: 0.8rem;
+    text-align: justify; /* Proper alignment for paragraphs */
+    font-family: "Roboto", serif;
+  }
+
+  .post .tags {
+    margin: 10px;
+    color: #89A8B2; /* Tag text color */
+    font-weight: bold;
+    text-align: center;
+    font-family: "Archivo", serif;
+  }
+
+  .post .actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #E5E1DA; /* Neutral background for actions */
+    border-top: 1px solid #ccc;
+  }
+
+  .post .like-btn {
+    cursor: pointer;
+    color: #89A8B2;
+    font-family: "Roboto", serif;
+  }
+
+  .post .like-btn span {
+    margin-left: 5px;
+  }
